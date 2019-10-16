@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UOb-8M-hLR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Upload View Controller-->
+        <scene sceneID="aav-6g-dNl">
+            <objects>
+                <viewController id="H9o-Fd-ID4" customClass="UploadViewController" customModule="SNSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="doL-JD-IcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="rdt-Ju-jDl">
+                                <rect key="frame" x="-772.5" y="-302" width="1920" height="1271"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="waH-Rd-80V" userLabel="WholeStack">
+                                <rect key="frame" x="0.0" y="64" width="375" height="498.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="l8G-Z2-3GD">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="349"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgh-s7-3Ur">
+                                        <rect key="frame" x="0.0" y="359" width="375" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIF-SN-pZt">
+                                        <rect key="frame" x="37.5" y="419" width="300" height="79.5"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.78039215689999997" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Upload"/>
+                                        <connections>
+                                            <action selector="upload:" destination="H9o-Fd-ID4" eventType="touchUpInside" id="1aF-U0-v4m"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="l8G-Z2-3GD" firstAttribute="height" secondItem="waH-Rd-80V" secondAttribute="height" multiplier="0.7" id="4i3-kO-ain"/>
+                                    <constraint firstItem="lgh-s7-3Ur" firstAttribute="width" secondItem="waH-Rd-80V" secondAttribute="width" id="NPJ-pf-XMp"/>
+                                    <constraint firstItem="l8G-Z2-3GD" firstAttribute="width" secondItem="waH-Rd-80V" secondAttribute="width" id="Pgy-zB-WIt"/>
+                                    <constraint firstItem="kIF-SN-pZt" firstAttribute="width" secondItem="waH-Rd-80V" secondAttribute="width" multiplier="0.8" id="SVa-20-zJ6"/>
+                                    <constraint firstItem="lgh-s7-3Ur" firstAttribute="height" secondItem="waH-Rd-80V" secondAttribute="height" multiplier="0.1" id="by3-an-BHA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rdt-Ju-jDl" firstAttribute="centerX" secondItem="doL-JD-IcQ" secondAttribute="centerX" id="5CI-cD-2O6"/>
+                            <constraint firstItem="rdt-Ju-jDl" firstAttribute="centerY" secondItem="doL-JD-IcQ" secondAttribute="centerY" id="DU8-K6-f7h"/>
+                            <constraint firstItem="waH-Rd-80V" firstAttribute="centerX" secondItem="doL-JD-IcQ" secondAttribute="centerX" id="KWs-hN-14f"/>
+                            <constraint firstItem="waH-Rd-80V" firstAttribute="top" secondItem="xgi-Uu-ZgW" secondAttribute="top" id="Z0o-72-lMl"/>
+                            <constraint firstItem="waH-Rd-80V" firstAttribute="height" secondItem="xgi-Uu-ZgW" secondAttribute="height" multiplier="0.9" id="b1Q-2k-Sye"/>
+                            <constraint firstItem="waH-Rd-80V" firstAttribute="width" secondItem="xgi-Uu-ZgW" secondAttribute="width" id="wc6-IT-Cxt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xgi-Uu-ZgW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vCE-tm-gVu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="l8G-Z2-3GD" id="a9W-wn-Jev"/>
+                        <outlet property="resultTextLabel" destination="lgh-s7-3Ur" id="Cbb-Mt-Jkd"/>
+                        <outletCollection property="viewsNeedBorder" destination="kIF-SN-pZt" collectionClass="NSMutableArray" id="382-PM-io5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WL9-Ec-s46" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.79999999999995" y="1942.5787106446778"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Sc-hT-RJc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UOb-8M-hLR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="uploadIcon" id="uvU-vT-Jsh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mdy-C7-KY5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H9o-Fd-ID4" kind="relationship" relationship="rootViewController" id="2Hm-Ir-vWU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZO-Hl-bgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346.39999999999998" y="1942.5787106446778"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="128" height="128"/>
+        <image name="loginBackground" width="1920" height="1271"/>
+        <image name="uploadIcon" width="24" height="24"/>
+    </resources>
+</document>

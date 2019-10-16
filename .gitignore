@@ -1,0 +1,7 @@
+SNSAppUITests/
+SNSAppTests/
+SNSApp.xcworkspace/
+Pods/
+Podfile.lock
+.DS_Store
+SNSApp.xcworkspace/
