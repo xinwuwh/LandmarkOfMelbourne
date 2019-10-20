@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9EJ-p0-JpM">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="9EJ-p0-JpM">
                     <rect key="frame" x="0.0" y="39" width="414" height="818"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXZ-4M-awj">
@@ -32,10 +32,10 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9Cy-rJ-wwS">
-                            <rect key="frame" x="0.0" y="82" width="414" height="706"/>
+                            <rect key="frame" x="0.0" y="82" width="414" height="654"/>
                         </mapView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lk-2P-ZZM">
-                            <rect key="frame" x="0.0" y="788" width="414" height="30"/>
+                            <rect key="frame" x="0.0" y="736" width="414" height="82"/>
                             <state key="normal" title="Back"/>
                             <connections>
                                 <action selector="backToPre:" destination="-1" eventType="touchUpInside" id="3uA-hf-piO"/>
@@ -44,6 +44,7 @@
                     </subviews>
                     <constraints>
                         <constraint firstItem="oXZ-4M-awj" firstAttribute="height" secondItem="9EJ-p0-JpM" secondAttribute="height" multiplier="0.1" id="QH6-Oq-IX5"/>
+                        <constraint firstItem="9Cy-rJ-wwS" firstAttribute="height" secondItem="9EJ-p0-JpM" secondAttribute="height" multiplier="0.8" id="lGF-nw-MAo"/>
                     </constraints>
                 </stackView>
             </subviews>

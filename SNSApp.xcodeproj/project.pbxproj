@@ -32,6 +32,8 @@
 		07C4DB81216311E600D778B5 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4DB80216311E600D778B5 /* UploadViewController.swift */; };
 		07C4DB832163166E00D778B5 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4DB822163166E00D778B5 /* Log.swift */; };
 		097D8E4E21749034004082AB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 097D8E4D21749034004082AB /* .gitignore */; };
+		1C14F8472359E92500EAC92F /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14F8462359E92500EAC92F /* HomeCollectionViewController.swift */; };
+		1C14F8492359EC7100EAC92F /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14F8482359EC7100EAC92F /* HomeCollectionViewCell.swift */; };
 		1C31F4F92323263F009FEE4F /* LandmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C31F4F82323263F009FEE4F /* LandmarkViewController.swift */; };
 		1C31F4FB23232AE4009FEE4F /* StreetViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C31F4FA23232AE4009FEE4F /* StreetViewViewController.swift */; };
 		1C31F4FE23232BBB009FEE4F /* Landmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C31F4FC23232BBB009FEE4F /* Landmark.storyboard */; };
@@ -97,6 +99,8 @@
 		07C4DB80216311E600D778B5 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		07C4DB822163166E00D778B5 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		097D8E4D21749034004082AB /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1C14F8462359E92500EAC92F /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		1C14F8482359EC7100EAC92F /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1C31F4F82323263F009FEE4F /* LandmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkViewController.swift; sourceTree = "<group>"; };
 		1C31F4FA23232AE4009FEE4F /* StreetViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetViewViewController.swift; sourceTree = "<group>"; };
 		1C31F4FC23232BBB009FEE4F /* Landmark.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landmark.storyboard; sourceTree = "<group>"; };
@@ -291,6 +295,8 @@
 				1C9683472343628A006AE3EE /* HomeViewController.swift */,
 				1C968349234362A6006AE3EE /* HomeTableViewCell.swift */,
 				1C96834B23436A5D006AE3EE /* HomeDetailViewController.swift */,
+				1C14F8462359E92500EAC92F /* HomeCollectionViewController.swift */,
+				1C14F8482359EC7100EAC92F /* HomeCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -485,7 +491,9 @@
 				1C5516FF234B57F600F07AD2 /* PredictResult.swift in Sources */,
 				079A1DCC2158C9F900CD57DC /* SignupViewController.swift in Sources */,
 				07C4DB81216311E600D778B5 /* UploadViewController.swift in Sources */,
+				1C14F8472359E92500EAC92F /* HomeCollectionViewController.swift in Sources */,
 				07C4DB832163166E00D778B5 /* Log.swift in Sources */,
+				1C14F8492359EC7100EAC92F /* HomeCollectionViewCell.swift in Sources */,
 				07397A01216F0B3E00B7B191 /* WebAPIExtension.swift in Sources */,
 				072427622144F95A001D0F40 /* SNSApp.xcdatamodeld in Sources */,
 				1C96834A234362A6006AE3EE /* HomeTableViewCell.swift in Sources */,

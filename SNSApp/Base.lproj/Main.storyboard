@@ -234,7 +234,7 @@
                     </tabBar>
                     <connections>
                         <outlet property="tabBar" destination="NU7-xf-kmM" id="B6b-Aw-Y0P"/>
-                        <segue destination="AZG-SY-ndK" kind="relationship" relationship="viewControllers" id="mPe-sl-JKV"/>
+                        <segue destination="no4-2X-rgB" kind="relationship" relationship="viewControllers" id="5dL-2s-dvN"/>
                         <segue destination="zqg-QR-N7l" kind="relationship" relationship="viewControllers" id="aSk-at-XLL"/>
                         <segue destination="FkY-QK-nDQ" kind="relationship" relationship="viewControllers" id="fya-Nh-iK0"/>
                     </connections>
@@ -382,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bd3-K7-6om" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1510" y="1981"/>
+            <point key="canvasLocation" x="1791" y="2306"/>
         </scene>
         <!--StreetView-->
         <scene sceneID="jX0-IZ-5z2">
@@ -413,8 +413,109 @@
             </objects>
             <point key="canvasLocation" x="-618" y="1976"/>
         </scene>
+        <!--Home Collection View Controller-->
+        <scene sceneID="lw2-k9-YG7">
+            <objects>
+                <viewController id="48P-St-Mld" customClass="HomeCollectionViewController" customModule="SNSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fP2-IX-7zp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gk3-vy-5XF">
+                                <rect key="frame" x="0.0" y="56.5" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iup-Hq-pa6">
+                                    <size key="itemSize" width="180" height="180"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="placeCell" id="rpq-dR-MQi" customClass="HomeCollectionViewCell" customModule="SNSApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r1c-eS-bi4">
+                                                    <rect key="frame" x="36" y="0.0" width="108" height="108"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="r1c-eS-bi4" secondAttribute="height" multiplier="1:1" id="WGF-ly-hqm"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="N19-oV-ex6">
+                                                    <rect key="frame" x="0.0" y="108" width="180" height="72"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="r1c-eS-bi4" firstAttribute="height" secondItem="rpq-dR-MQi" secondAttribute="height" multiplier="0.6" id="1ye-0r-kbZ"/>
+                                            <constraint firstItem="r1c-eS-bi4" firstAttribute="centerX" secondItem="rpq-dR-MQi" secondAttribute="centerX" id="3IY-F5-w7R"/>
+                                            <constraint firstItem="N19-oV-ex6" firstAttribute="top" secondItem="r1c-eS-bi4" secondAttribute="bottom" id="5ty-PT-xmu"/>
+                                            <constraint firstItem="N19-oV-ex6" firstAttribute="width" secondItem="rpq-dR-MQi" secondAttribute="width" id="afN-dr-VEJ"/>
+                                            <constraint firstItem="N19-oV-ex6" firstAttribute="centerX" secondItem="r1c-eS-bi4" secondAttribute="centerX" id="je8-2X-koj"/>
+                                            <constraint firstItem="r1c-eS-bi4" firstAttribute="top" secondItem="rpq-dR-MQi" secondAttribute="top" id="mCH-6V-eVm"/>
+                                            <constraint firstItem="N19-oV-ex6" firstAttribute="height" secondItem="rpq-dR-MQi" secondAttribute="height" multiplier="0.4" id="tVN-er-zvg"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="r1c-eS-bi4" id="U1Z-HI-Myp"/>
+                                            <outlet property="labelView" destination="N19-oV-ex6" id="dQv-OQ-7jf"/>
+                                            <segue destination="jsT-0Z-fs0" kind="show" identifier="showDetail" id="T3d-TO-PFS"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="48P-St-Mld" id="KVg-7v-Gw7"/>
+                                    <outlet property="delegate" destination="48P-St-Mld" id="O8q-rk-pDE"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gk3-vy-5XF" firstAttribute="width" secondItem="GrS-gB-f5h" secondAttribute="width" id="89L-2f-iZF"/>
+                            <constraint firstItem="gk3-vy-5XF" firstAttribute="centerX" secondItem="fP2-IX-7zp" secondAttribute="centerX" id="T9j-OF-F96"/>
+                            <constraint firstItem="gk3-vy-5XF" firstAttribute="height" secondItem="GrS-gB-f5h" secondAttribute="height" id="hbJ-ky-UfQ"/>
+                            <constraint firstItem="gk3-vy-5XF" firstAttribute="centerY" secondItem="fP2-IX-7zp" secondAttribute="centerY" id="wGP-Ny-Uyp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GrS-gB-f5h"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nzX-GK-vKL"/>
+                    <connections>
+                        <outlet property="placeCollectView" destination="gk3-vy-5XF" id="v0i-ad-51a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDq-qa-dfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="2713"/>
+        </scene>
+        <!--Grid-->
+        <scene sceneID="lej-1d-eZH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="no4-2X-rgB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Grid" id="ho6-ff-WTa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="At9-Wu-oqW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="48P-St-Mld" kind="relationship" relationship="rootViewController" id="P2e-ZG-RCx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAk-TE-g7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-618" y="2713"/>
+        </scene>
     </scenes>
     <resources>
         <image name="loginBackground" width="1920" height="1271"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="T3d-TO-PFS"/>
+    </inferredMetricsTieBreakers>
 </document>
