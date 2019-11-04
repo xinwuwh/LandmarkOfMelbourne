@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0710174A21636ADD008C27FD /* MyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0710174921636ADD008C27FD /* MyExtensions.swift */; };
 		0724275A2144F95A001D0F40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072427592144F95A001D0F40 /* AppDelegate.swift */; };
-		0724275C2144F95A001D0F40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0724275B2144F95A001D0F40 /* LoginViewController.swift */; };
 		0724275F2144F95A001D0F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0724275D2144F95A001D0F40 /* Main.storyboard */; };
 		072427622144F95A001D0F40 /* SNSApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 072427602144F95A001D0F40 /* SNSApp.xcdatamodeld */; };
 		072427642144F95C001D0F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072427632144F95C001D0F40 /* Assets.xcassets */; };
@@ -18,33 +17,28 @@
 		0724277D2144F95C001D0F40 /* SNSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0724277C2144F95C001D0F40 /* SNSAppUITests.swift */; };
 		0724278C2144FE17001D0F40 /* UIFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0724278B2144FE17001D0F40 /* UIFuncs.swift */; };
 		0724278E2144FF3A001D0F40 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0724278D2144FF3A001D0F40 /* Podfile */; };
-		07397A01216F0B3E00B7B191 /* WebAPIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07397A00216F0B3D00B7B191 /* WebAPIExtension.swift */; };
-		074194C7216C683A00B1B58B /* PostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074194C6216C683A00B1B58B /* PostListModel.swift */; };
 		079A1DBF2158897D00CD57DC /* WebAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079A1DBE2158897D00CD57DC /* WebAPIHandler.swift */; };
-		079A1DC22158AEEB00CD57DC /* SignupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079A1DC12158AEEB00CD57DC /* SignupFormController.swift */; };
-		079A1DC42158AF3100CD57DC /* BaseFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079A1DC32158AF3100CD57DC /* BaseFormController.swift */; };
-		079A1DC82158B32200CD57DC /* FormSectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079A1DC52158B32200CD57DC /* FormSectionTitle.swift */; };
-		079A1DC92158B32200CD57DC /* FormSectionTItle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079A1DC62158B32200CD57DC /* FormSectionTItle.xib */; };
-		079A1DCC2158C9F900CD57DC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079A1DCB2158C9F900CD57DC /* SignupViewController.swift */; };
 		079A1DCF2158E51D00CD57DC /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079A1DCE2158E51D00CD57DC /* DateHelper.swift */; };
 		079A1DD12158F19800CD57DC /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079A1DD02158F19700CD57DC /* AppDelegateExtension.swift */; };
-		079A1DE52158F4E200CD57DC /* Upload.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079A1DDD2158F4E100CD57DC /* Upload.storyboard */; };
-		07C4DB81216311E600D778B5 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4DB80216311E600D778B5 /* UploadViewController.swift */; };
 		07C4DB832163166E00D778B5 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4DB822163166E00D778B5 /* Log.swift */; };
 		097D8E4E21749034004082AB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 097D8E4D21749034004082AB /* .gitignore */; };
 		1C14F8472359E92500EAC92F /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14F8462359E92500EAC92F /* HomeCollectionViewController.swift */; };
-		1C14F8492359EC7100EAC92F /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14F8482359EC7100EAC92F /* HomeCollectionViewCell.swift */; };
+		1C14F8492359EC7100EAC92F /* HomeCollectionLandmarkViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14F8482359EC7100EAC92F /* HomeCollectionLandmarkViewCell.swift */; };
 		1C31F4F92323263F009FEE4F /* LandmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C31F4F82323263F009FEE4F /* LandmarkViewController.swift */; };
 		1C31F4FB23232AE4009FEE4F /* StreetViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C31F4FA23232AE4009FEE4F /* StreetViewViewController.swift */; };
 		1C31F4FE23232BBB009FEE4F /* Landmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C31F4FC23232BBB009FEE4F /* Landmark.storyboard */; };
 		1C31F4FF23232BBB009FEE4F /* StreetView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C31F4FD23232BBB009FEE4F /* StreetView.storyboard */; };
 		1C31F5032323304E009FEE4F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C31F5012323304E009FEE4F /* MapViewController.swift */; };
-		1C31F5042323304E009FEE4F /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C31F5022323304E009FEE4F /* MapViewController.xib */; };
+		1C38C868235F367700D40725 /* HomeCollectionStreetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38C867235F367700D40725 /* HomeCollectionStreetViewCell.swift */; };
+		1C38C86A235F399A00D40725 /* HomeStreetViewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38C869235F399A00D40725 /* HomeStreetViewDetailViewController.swift */; };
+		1C38C86D235F464700D40725 /* SelectLableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38C86C235F464700D40725 /* SelectLableViewController.swift */; };
+		1C38C86F235F47BE00D40725 /* SelectLabelTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38C86E235F47BE00D40725 /* SelectLabelTableCell.swift */; };
+		1C38C871235F509000D40725 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C38C870235F509000D40725 /* MapViewController.xib */; };
+		1C38C873235F52CB00D40725 /* PredictStreetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38C872235F52CB00D40725 /* PredictStreetViewController.swift */; };
 		1C5516FD234B3D4500F07AD2 /* LandmarkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5516FC234B3D4500F07AD2 /* LandmarkData.swift */; };
 		1C5516FF234B57F600F07AD2 /* PredictResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5516FE234B57F600F07AD2 /* PredictResult.swift */; };
-		1C9683482343628A006AE3EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9683472343628A006AE3EE /* HomeViewController.swift */; };
-		1C96834A234362A6006AE3EE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C968349234362A6006AE3EE /* HomeTableViewCell.swift */; };
-		1C96834C23436A5D006AE3EE /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96834B23436A5D006AE3EE /* HomeDetailViewController.swift */; };
+		1C96834C23436A5D006AE3EE /* HomeLandmarkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96834B23436A5D006AE3EE /* HomeLandmarkDetailViewController.swift */; };
+		1C993B54235F312E008BA5AF /* StreetViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C993B53235F312E008BA5AF /* StreetViewData.swift */; };
 		2493885B81FB03B9AF667DA9 /* Pods_SNSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3416517569D00D4515C9862D /* Pods_SNSApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,10 +61,8 @@
 
 /* Begin PBXFileReference section */
 		0710174921636ADD008C27FD /* MyExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExtensions.swift; sourceTree = "<group>"; };
-		0710174B2164250E008C27FD /* kn_todo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = kn_todo.md; sourceTree = "<group>"; };
 		072427562144F95A001D0F40 /* SNSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		072427592144F95A001D0F40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0724275B2144F95A001D0F40 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0724275E2144F95A001D0F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		072427612144F95A001D0F40 /* SNSApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SNSApp.xcdatamodel; sourceTree = "<group>"; };
 		072427632144F95C001D0F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,35 +75,30 @@
 		0724277C2144F95C001D0F40 /* SNSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSAppUITests.swift; sourceTree = "<group>"; };
 		0724277E2144F95C001D0F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0724278B2144FE17001D0F40 /* UIFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFuncs.swift; sourceTree = "<group>"; };
-		0724278D2144FF3A001D0F40 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0724278D2144FF3A001D0F40 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		0724278F21450166001D0F40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		07397A00216F0B3D00B7B191 /* WebAPIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIExtension.swift; sourceTree = "<group>"; };
-		074194C6216C683A00B1B58B /* PostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModel.swift; sourceTree = "<group>"; };
 		079A1DBE2158897D00CD57DC /* WebAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIHandler.swift; sourceTree = "<group>"; };
-		079A1DC12158AEEB00CD57DC /* SignupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormController.swift; sourceTree = "<group>"; };
-		079A1DC32158AF3100CD57DC /* BaseFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFormController.swift; sourceTree = "<group>"; };
-		079A1DC52158B32200CD57DC /* FormSectionTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSectionTitle.swift; sourceTree = "<group>"; };
-		079A1DC62158B32200CD57DC /* FormSectionTItle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormSectionTItle.xib; sourceTree = "<group>"; };
-		079A1DCB2158C9F900CD57DC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		079A1DCE2158E51D00CD57DC /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		079A1DD02158F19700CD57DC /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
-		079A1DDD2158F4E100CD57DC /* Upload.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Upload.storyboard; sourceTree = "<group>"; };
-		07C4DB80216311E600D778B5 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		07C4DB822163166E00D778B5 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		097D8E4D21749034004082AB /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1C14F8462359E92500EAC92F /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
-		1C14F8482359EC7100EAC92F /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		1C14F8482359EC7100EAC92F /* HomeCollectionLandmarkViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionLandmarkViewCell.swift; sourceTree = "<group>"; };
 		1C31F4F82323263F009FEE4F /* LandmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkViewController.swift; sourceTree = "<group>"; };
 		1C31F4FA23232AE4009FEE4F /* StreetViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetViewViewController.swift; sourceTree = "<group>"; };
 		1C31F4FC23232BBB009FEE4F /* Landmark.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landmark.storyboard; sourceTree = "<group>"; };
 		1C31F4FD23232BBB009FEE4F /* StreetView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StreetView.storyboard; sourceTree = "<group>"; };
 		1C31F5012323304E009FEE4F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		1C31F5022323304E009FEE4F /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		1C38C867235F367700D40725 /* HomeCollectionStreetViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionStreetViewCell.swift; sourceTree = "<group>"; };
+		1C38C869235F399A00D40725 /* HomeStreetViewDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStreetViewDetailViewController.swift; sourceTree = "<group>"; };
+		1C38C86C235F464700D40725 /* SelectLableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLableViewController.swift; sourceTree = "<group>"; };
+		1C38C86E235F47BE00D40725 /* SelectLabelTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLabelTableCell.swift; sourceTree = "<group>"; };
+		1C38C870235F509000D40725 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		1C38C872235F52CB00D40725 /* PredictStreetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictStreetViewController.swift; sourceTree = "<group>"; };
 		1C5516FC234B3D4500F07AD2 /* LandmarkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkData.swift; sourceTree = "<group>"; };
 		1C5516FE234B57F600F07AD2 /* PredictResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictResult.swift; sourceTree = "<group>"; };
-		1C9683472343628A006AE3EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		1C968349234362A6006AE3EE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		1C96834B23436A5D006AE3EE /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		1C96834B23436A5D006AE3EE /* HomeLandmarkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLandmarkDetailViewController.swift; sourceTree = "<group>"; };
+		1C993B53235F312E008BA5AF /* StreetViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetViewData.swift; sourceTree = "<group>"; };
 		3416517569D00D4515C9862D /* Pods_SNSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8387B34DC79832AEED72CA9 /* Pods-SNSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNSApp/Pods-SNSApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E0249FA00AFD46D3C16D1B9E /* Pods-SNSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNSApp/Pods-SNSApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				097D8E4D21749034004082AB /* .gitignore */,
-				0710174B2164250E008C27FD /* kn_todo.md */,
 				0724278F21450166001D0F40 /* README.md */,
 				0724278D2144FF3A001D0F40 /* Podfile */,
 				072427582144F95A001D0F40 /* SNSApp */,
@@ -172,14 +158,10 @@
 		072427582144F95A001D0F40 /* SNSApp */ = {
 			isa = PBXGroup;
 			children = (
+				1C38C86B235F45FB00D40725 /* StreetViewTab */,
 				1C96834623436271006AE3EE /* Home */,
-				1C31F50023233031009FEE4F /* Map */,
-				1C31F4F7232321AE009FEE4F /* TabBar */,
+				1C31F4F7232321AE009FEE4F /* LandmarkTab */,
 				074194C5216C680800B1B58B /* JsonModels */,
-				074194C6216C683A00B1B58B /* PostListModel.swift */,
-				079A1DDC2158F4E100CD57DC /* Upload */,
-				079A1DCD2158C9FD00CD57DC /* LoginSignup */,
-				079A1DC02158AEBB00CD57DC /* Forms */,
 				0724278A2144FDFA001D0F40 /* CommonFuncs */,
 				072427592144F95A001D0F40 /* AppDelegate.swift */,
 				0724275D2144F95A001D0F40 /* Main.storyboard */,
@@ -218,7 +200,6 @@
 				079A1DD02158F19700CD57DC /* AppDelegateExtension.swift */,
 				07C4DB822163166E00D778B5 /* Log.swift */,
 				0710174921636ADD008C27FD /* MyExtensions.swift */,
-				07397A00216F0B3D00B7B191 /* WebAPIExtension.swift */,
 			);
 			path = CommonFuncs;
 			sourceTree = "<group>";
@@ -228,37 +209,9 @@
 			children = (
 				1C5516FC234B3D4500F07AD2 /* LandmarkData.swift */,
 				1C5516FE234B57F600F07AD2 /* PredictResult.swift */,
+				1C993B53235F312E008BA5AF /* StreetViewData.swift */,
 			);
 			path = JsonModels;
-			sourceTree = "<group>";
-		};
-		079A1DC02158AEBB00CD57DC /* Forms */ = {
-			isa = PBXGroup;
-			children = (
-				079A1DC52158B32200CD57DC /* FormSectionTitle.swift */,
-				079A1DC62158B32200CD57DC /* FormSectionTItle.xib */,
-				079A1DC12158AEEB00CD57DC /* SignupFormController.swift */,
-				079A1DC32158AF3100CD57DC /* BaseFormController.swift */,
-			);
-			path = Forms;
-			sourceTree = "<group>";
-		};
-		079A1DCD2158C9FD00CD57DC /* LoginSignup */ = {
-			isa = PBXGroup;
-			children = (
-				0724275B2144F95A001D0F40 /* LoginViewController.swift */,
-				079A1DCB2158C9F900CD57DC /* SignupViewController.swift */,
-			);
-			path = LoginSignup;
-			sourceTree = "<group>";
-		};
-		079A1DDC2158F4E100CD57DC /* Upload */ = {
-			isa = PBXGroup;
-			children = (
-				079A1DDD2158F4E100CD57DC /* Upload.storyboard */,
-				07C4DB80216311E600D778B5 /* UploadViewController.swift */,
-			);
-			path = Upload;
 			sourceTree = "<group>";
 		};
 		147A19DEE9D1D6D47A4AA6D4 /* Frameworks */ = {
@@ -269,34 +222,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1C31F4F7232321AE009FEE4F /* TabBar */ = {
+		1C31F4F7232321AE009FEE4F /* LandmarkTab */ = {
 			isa = PBXGroup;
 			children = (
+				1C38C870235F509000D40725 /* MapViewController.xib */,
+				1C31F5012323304E009FEE4F /* MapViewController.swift */,
 				1C31F4FC23232BBB009FEE4F /* Landmark.storyboard */,
-				1C31F4FD23232BBB009FEE4F /* StreetView.storyboard */,
 				1C31F4F82323263F009FEE4F /* LandmarkViewController.swift */,
-				1C31F4FA23232AE4009FEE4F /* StreetViewViewController.swift */,
 			);
-			path = TabBar;
+			path = LandmarkTab;
 			sourceTree = "<group>";
 		};
-		1C31F50023233031009FEE4F /* Map */ = {
+		1C38C86B235F45FB00D40725 /* StreetViewTab */ = {
 			isa = PBXGroup;
 			children = (
-				1C31F5012323304E009FEE4F /* MapViewController.swift */,
-				1C31F5022323304E009FEE4F /* MapViewController.xib */,
+				1C31F4FA23232AE4009FEE4F /* StreetViewViewController.swift */,
+				1C31F4FD23232BBB009FEE4F /* StreetView.storyboard */,
+				1C38C86C235F464700D40725 /* SelectLableViewController.swift */,
+				1C38C86E235F47BE00D40725 /* SelectLabelTableCell.swift */,
+				1C38C872235F52CB00D40725 /* PredictStreetViewController.swift */,
 			);
-			path = Map;
+			path = StreetViewTab;
 			sourceTree = "<group>";
 		};
 		1C96834623436271006AE3EE /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1C9683472343628A006AE3EE /* HomeViewController.swift */,
-				1C968349234362A6006AE3EE /* HomeTableViewCell.swift */,
-				1C96834B23436A5D006AE3EE /* HomeDetailViewController.swift */,
+				1C96834B23436A5D006AE3EE /* HomeLandmarkDetailViewController.swift */,
 				1C14F8462359E92500EAC92F /* HomeCollectionViewController.swift */,
-				1C14F8482359EC7100EAC92F /* HomeCollectionViewCell.swift */,
+				1C14F8482359EC7100EAC92F /* HomeCollectionLandmarkViewCell.swift */,
+				1C38C867235F367700D40725 /* HomeCollectionStreetViewCell.swift */,
+				1C38C869235F399A00D40725 /* HomeStreetViewDetailViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -419,11 +375,9 @@
 				072427672144F95C001D0F40 /* LaunchScreen.storyboard in Resources */,
 				072427642144F95C001D0F40 /* Assets.xcassets in Resources */,
 				1C31F4FF23232BBB009FEE4F /* StreetView.storyboard in Resources */,
-				1C31F5042323304E009FEE4F /* MapViewController.xib in Resources */,
+				1C38C871235F509000D40725 /* MapViewController.xib in Resources */,
 				0724278E2144FF3A001D0F40 /* Podfile in Resources */,
-				079A1DC92158B32200CD57DC /* FormSectionTItle.xib in Resources */,
 				1C31F4FE23232BBB009FEE4F /* Landmark.storyboard in Resources */,
-				079A1DE52158F4E200CD57DC /* Upload.storyboard in Resources */,
 				0724275F2144F95A001D0F40 /* Main.storyboard in Resources */,
 				097D8E4E21749034004082AB /* .gitignore in Resources */,
 			);
@@ -489,30 +443,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C5516FF234B57F600F07AD2 /* PredictResult.swift in Sources */,
-				079A1DCC2158C9F900CD57DC /* SignupViewController.swift in Sources */,
-				07C4DB81216311E600D778B5 /* UploadViewController.swift in Sources */,
 				1C14F8472359E92500EAC92F /* HomeCollectionViewController.swift in Sources */,
+				1C38C868235F367700D40725 /* HomeCollectionStreetViewCell.swift in Sources */,
+				1C38C86D235F464700D40725 /* SelectLableViewController.swift in Sources */,
+				1C38C86F235F47BE00D40725 /* SelectLabelTableCell.swift in Sources */,
 				07C4DB832163166E00D778B5 /* Log.swift in Sources */,
-				1C14F8492359EC7100EAC92F /* HomeCollectionViewCell.swift in Sources */,
-				07397A01216F0B3E00B7B191 /* WebAPIExtension.swift in Sources */,
+				1C14F8492359EC7100EAC92F /* HomeCollectionLandmarkViewCell.swift in Sources */,
 				072427622144F95A001D0F40 /* SNSApp.xcdatamodeld in Sources */,
-				1C96834A234362A6006AE3EE /* HomeTableViewCell.swift in Sources */,
-				1C9683482343628A006AE3EE /* HomeViewController.swift in Sources */,
 				0724278C2144FE17001D0F40 /* UIFuncs.swift in Sources */,
 				1C31F4F92323263F009FEE4F /* LandmarkViewController.swift in Sources */,
-				0724275C2144F95A001D0F40 /* LoginViewController.swift in Sources */,
 				1C31F5032323304E009FEE4F /* MapViewController.swift in Sources */,
-				079A1DC22158AEEB00CD57DC /* SignupFormController.swift in Sources */,
-				1C96834C23436A5D006AE3EE /* HomeDetailViewController.swift in Sources */,
-				074194C7216C683A00B1B58B /* PostListModel.swift in Sources */,
+				1C993B54235F312E008BA5AF /* StreetViewData.swift in Sources */,
+				1C96834C23436A5D006AE3EE /* HomeLandmarkDetailViewController.swift in Sources */,
 				1C31F4FB23232AE4009FEE4F /* StreetViewViewController.swift in Sources */,
 				0710174A21636ADD008C27FD /* MyExtensions.swift in Sources */,
 				079A1DCF2158E51D00CD57DC /* DateHelper.swift in Sources */,
-				079A1DC82158B32200CD57DC /* FormSectionTitle.swift in Sources */,
+				1C38C873235F52CB00D40725 /* PredictStreetViewController.swift in Sources */,
 				0724275A2144F95A001D0F40 /* AppDelegate.swift in Sources */,
 				079A1DBF2158897D00CD57DC /* WebAPIHandler.swift in Sources */,
+				1C38C86A235F399A00D40725 /* HomeStreetViewDetailViewController.swift in Sources */,
 				079A1DD12158F19800CD57DC /* AppDelegateExtension.swift in Sources */,
-				079A1DC42158AF3100CD57DC /* BaseFormController.swift in Sources */,
 				1C5516FD234B3D4500F07AD2 /* LandmarkData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -690,7 +640,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TS386UZ5J7;
 				INFOPLIST_FILE = SNSApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -710,7 +660,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TS386UZ5J7;
 				INFOPLIST_FILE = SNSApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

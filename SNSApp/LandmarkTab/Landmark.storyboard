@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H9o-Fd-ID4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landmark-->
+        <scene sceneID="aav-6g-dNl">
+            <objects>
+                <viewController id="H9o-Fd-ID4" customClass="LandmarkViewController" customModule="SNSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="doL-JD-IcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="rdt-Ju-jDl">
+                                <rect key="frame" x="0.0" y="34.5" width="375" height="598"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="waH-Rd-80V" userLabel="WholeStack">
+                                <rect key="frame" x="0.0" y="64.5" width="375" height="538"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landmark Identifier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLD-oa-m31">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="27"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="l8G-Z2-3GD">
+                                        <rect key="frame" x="0.0" y="37" width="375" height="246.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-xg-iuf">
+                                        <rect key="frame" x="0.0" y="293.5" width="375" height="27"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.47843137250000001" blue="0.23529411759999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPY-GM-4uh">
+                                        <rect key="frame" x="0.0" y="330.5" width="375" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.47843137250000001" blue="0.23529411759999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dI-nW-C2j" userLabel="Find Your Location">
+                                        <rect key="frame" x="94" y="367.5" width="187.5" height="53.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="Find Location   ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showLocation:" destination="H9o-Fd-ID4" eventType="touchUpInside" id="0Mj-JA-p92"/>
+                                        </connections>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pCE-0D-lO3">
+                                        <rect key="frame" x="0.0" y="431" width="375" height="44.5"/>
+                                        <segments>
+                                            <segment title="MobileNet"/>
+                                            <segment title="InceptionV3"/>
+                                            <segment title="ResNet50"/>
+                                            <segment title="Xception"/>
+                                        </segments>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIF-SN-pZt">
+                                        <rect key="frame" x="94" y="484.5" width="187.5" height="53.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="Upload   " image="upload">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="upload:" destination="H9o-Fd-ID4" eventType="touchUpInside" id="INx-1i-BHr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KBX-xg-iuf" firstAttribute="width" secondItem="waH-Rd-80V" secondAttribute="width" id="Dad-Od-2cE"/>
+                                    <constraint firstItem="6dI-nW-C2j" firstAttribute="width" secondItem="waH-Rd-80V" secondAttribute="width" multiplier="0.5" id="Fkk-rV-nX9"/>
+                                    <constraint firstItem="pCE-0D-lO3" firstAttribute="width" secondItem="waH-Rd-80V" secondAttribute="width" id="PKi-re-hTy"/>
+                                    <constraint firstItem="kIF-SN-pZt" firstAttribute="width" secondItem="waH-Rd-80V" secondAttribute="width" multiplier="0.5" id="QoE-ux-6cp"/>
+                                    <constraint firstItem="6dI-nW-C2j" firstAttribute="height" secondItem="waH-Rd-80V" secondAttribute="height" multiplier="0.1" id="RbF-aS-coG"/>
+                                    <constraint firstItem="l8G-Z2-3GD" firstAttribute="width" secondItem="waH-Rd-80V" secondAttribute="width" id="Vms-tw-Ukz"/>
+                                    <constraint firstItem="HPY-GM-4uh" firstAttribute="width" secondItem="waH-Rd-80V" secondAttribute="width" id="YCa-hb-Fu3"/>
+                                    <constraint firstItem="pCE-0D-lO3" firstAttribute="height" secondItem="waH-Rd-80V" secondAttribute="height" multiplier="0.08" id="knm-az-JmP"/>
+                                    <constraint firstItem="kIF-SN-pZt" firstAttribute="height" secondItem="waH-Rd-80V" secondAttribute="height" multiplier="0.1" id="leL-08-aqR"/>
+                                    <constraint firstItem="FLD-oa-m31" firstAttribute="height" secondItem="waH-Rd-80V" secondAttribute="height" multiplier="0.05" id="oJB-ui-dcO"/>
+                                    <constraint firstItem="FLD-oa-m31" firstAttribute="width" secondItem="waH-Rd-80V" secondAttribute="width" id="otI-ZG-51g"/>
+                                    <constraint firstItem="KBX-xg-iuf" firstAttribute="height" secondItem="waH-Rd-80V" secondAttribute="height" multiplier="0.05" id="ufR-dZ-Wjt"/>
+                                    <constraint firstItem="HPY-GM-4uh" firstAttribute="height" secondItem="waH-Rd-80V" secondAttribute="height" multiplier="0.05" id="zuV-qG-fcf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rdt-Ju-jDl" firstAttribute="centerX" secondItem="doL-JD-IcQ" secondAttribute="centerX" id="5CI-cD-2O6"/>
+                            <constraint firstItem="rdt-Ju-jDl" firstAttribute="width" secondItem="xgi-Uu-ZgW" secondAttribute="width" id="6A9-Cp-8zx"/>
+                            <constraint firstItem="rdt-Ju-jDl" firstAttribute="centerY" secondItem="doL-JD-IcQ" secondAttribute="centerY" id="DU8-K6-f7h"/>
+                            <constraint firstItem="waH-Rd-80V" firstAttribute="centerX" secondItem="doL-JD-IcQ" secondAttribute="centerX" id="KWs-hN-14f"/>
+                            <constraint firstItem="waH-Rd-80V" firstAttribute="height" secondItem="xgi-Uu-ZgW" secondAttribute="height" multiplier="0.9" id="b1Q-2k-Sye"/>
+                            <constraint firstItem="waH-Rd-80V" firstAttribute="centerY" secondItem="doL-JD-IcQ" secondAttribute="centerY" id="fkD-vf-smZ"/>
+                            <constraint firstItem="rdt-Ju-jDl" firstAttribute="height" secondItem="xgi-Uu-ZgW" secondAttribute="height" id="iki-TF-Gby"/>
+                            <constraint firstItem="waH-Rd-80V" firstAttribute="width" secondItem="xgi-Uu-ZgW" secondAttribute="width" id="wc6-IT-Cxt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xgi-Uu-ZgW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Landmark" image="landmark" selectedImage="landmark-selected" id="uvU-vT-Jsh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="findLocationButton" destination="6dI-nW-C2j" id="u2F-bF-KCD"/>
+                        <outlet property="landmarkImageView" destination="l8G-Z2-3GD" id="nDG-tI-vAA"/>
+                        <outlet property="landmarkModelSelector" destination="pCE-0D-lO3" id="fwD-ln-ygR"/>
+                        <outlet property="landmarkNameLable" destination="KBX-xg-iuf" id="lJj-Il-eOJ"/>
+                        <outlet property="landmarkScoreTextLabel" destination="HPY-GM-4uh" id="w92-5Z-eqc"/>
+                        <outlet property="landmarkUploadButton" destination="kIF-SN-pZt" id="fz9-Tg-sSt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WL9-Ec-s46" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346.39999999999998" y="1942.5787106446778"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="128" height="128"/>
+        <image name="landmark" width="25" height="25"/>
+        <image name="landmark-selected" width="25" height="25"/>
+        <image name="loginBackground" width="600" height="400"/>
+        <image name="upload" width="25" height="19"/>
+    </resources>
+</document>

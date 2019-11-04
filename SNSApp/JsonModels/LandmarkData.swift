@@ -45,6 +45,10 @@ public class Landmark: Mappable{
         self.landmarkName <- map["name"]
         self.description <- map["description"]
         self.imageURL <- map["imageUrl"]
+        if(self.imageURL == nil){
+            self.imageURL = "https://www.freeiconspng.com/uploads/no-image-icon-11.PNG"
+        }
+        
         
         var coorString : String = ""
         coorString <- map["coordinate"]

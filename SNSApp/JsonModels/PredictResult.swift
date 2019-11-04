@@ -30,7 +30,7 @@ public class PredictResult: Mappable{
     //    var id:Int?
     var bestResult: String?
     
-    var bestResultScore: String? {
+    var bestResultScore: Double? {
         get{
             for item in allResults {
                 if(item.landMarkName == bestResult){
@@ -42,7 +42,7 @@ public class PredictResult: Mappable{
     }
     //    var searchedName: String?
     //    var count: Int?
-    var allResults: [(landMarkName:String, score: String)] = []
+    var allResults: [(landMarkName:String, score: Double)] = []
  
     public required init?(map: Map) {
         self.mapping(map: map)
@@ -50,11 +50,14 @@ public class PredictResult: Mappable{
     
     public func mapping(map: Map) {
         self.bestResult <- map["best_result"]
+        if(self.bestResult == nil){
+            self.bestResult <- map["result"]
+        }
         var allResultsList: [[String]] = []
         allResultsList <- map["all_results"]
         
         for onePredict in allResultsList {
-            allResults.append((landMarkName:onePredict[0] , score: onePredict[1]))
+            allResults.append((landMarkName:onePredict[0] , score: Double(onePredict[1]) as! Double))
         }
         
     }

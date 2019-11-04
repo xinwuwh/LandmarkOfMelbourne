@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "backgroud-color.png",
+      "filename" : "streetsign.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "backgroud-color-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "backgroud-color-2.png",
       "scale" : "3x"
     }
   ],
